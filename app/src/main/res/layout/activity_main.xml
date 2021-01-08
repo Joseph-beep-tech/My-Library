@@ -25,4 +25,14 @@
         android:layout_centerHorizontal="true"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/findRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-3dp"
+        android:background="@color/colorAccent"
+        android:text="Register"
+        android:textColor="@color/colorTextIcons" />
+
 </RelativeLayout>
