@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".RegisterFragment">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="60dp" />
+
+
 </LinearLayout>
