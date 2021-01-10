@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mFindRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                if (view == mFindRegisterButton){
+            public void onClick(View v) {
+                if (v == mFindRegisterButton){
                     String location = mLocationEditText.getText().toString();
 
                     Intent intent = new Intent(MainActivity.this, LibraryActivity.class);
