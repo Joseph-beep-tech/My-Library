@@ -14,14 +14,21 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-        <TextView
-            android:id="@+id/locationTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Books title"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />/>
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books title" />
 
+    <Button
+        android:id="@+id/findnextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-3dp"
+        android:background="@color/colorAccent"
+        android:text="Next Page"
+        android:textColor="@color/colorTextIcons" />
 
 
 </RelativeLayout>

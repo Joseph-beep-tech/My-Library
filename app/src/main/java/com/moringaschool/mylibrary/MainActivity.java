@@ -40,14 +40,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     intent.putExtra("location", location);
 
                     startActivity(intent);
-                    Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
+//                    Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
 
     }
 

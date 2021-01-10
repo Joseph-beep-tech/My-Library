@@ -35,7 +35,7 @@
         android:layout_above="@+id/findRegisterButton"
         android:layout_marginBottom="-6dp"
         android:background="@color/colorTextIcons"
-        android:hint="" />
+        android:hint="Enter Book Name" />
 
     <Button
         android:id="@+id/findRegisterButton"
@@ -44,7 +44,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-3dp"
         android:background="@color/colorAccent"
-        android:text="view books"
+        android:text="Find Books"
         android:textColor="@color/colorTextIcons" />
 
 </RelativeLayout>
