@@ -20,7 +20,7 @@ public class MyLibraryArrayAdapter extends ArrayAdapter {
     public Object getItem(int position){
         String library = mLibrary[position];
         String books = mBooks[position];
-        return String.format("%s \nknowledge is good: %s", library, books);
+        return String.format("%s \n You can purchase or borrow: %s", library, books);
     }
 
     @Override
