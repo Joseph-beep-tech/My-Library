@@ -39,7 +39,7 @@
         android:padding="15dp"
         android:inputType="textPersonName"
         android:fontFamily="@font/roboto_regular"
-        android:background="@drawable/mylibrary"
+        android:background="@color/colorTextIcons"
         android:textSize="15sp" />
 
 
