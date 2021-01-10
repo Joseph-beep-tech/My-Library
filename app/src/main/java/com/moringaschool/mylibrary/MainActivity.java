@@ -11,13 +11,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
     @BindView(R.id.findRegisterButton) Button mFindRegisterButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
@@ -37,10 +38,19 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(MainActivity.this, LibraryActivity.class);
                     intent.putExtra("location", location);
+
+                    startActivity(intent);
+                    Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
 
 
 }
