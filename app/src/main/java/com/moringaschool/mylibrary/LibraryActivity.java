@@ -1,5 +1,7 @@
 package com.moringaschool.mylibrary;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -57,7 +57,7 @@ public class LibraryActivity extends AppCompatActivity {
 
     Intent intent = getIntent();
     String location = intent.getStringExtra("location");
-        mLocationTextView.setText("Books gallore: " + location);
+        mLocationTextView.setText("Books you may read: " + location);
 }
 //
 //    private void setContentView(int activity_library) {

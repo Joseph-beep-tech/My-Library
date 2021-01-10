@@ -5,7 +5,7 @@ import android.widget.ArrayAdapter;
 
 public class MyLibraryArrayAdapter extends ArrayAdapter {
 
-    private LibraryActivity mContext;
+    private Context mContext;
     private String[] mLibrary;
     private String[] mBooks;
 
