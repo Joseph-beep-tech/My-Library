@@ -1,16 +1,15 @@
-package com.moringaschool.mylibrary;
+package com.moringaschool.mylibrary;//package com.moringaschool.mylibrary;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,6 +18,8 @@ public class LibraryActivity extends AppCompatActivity {
     public static final String TAG = LibraryActivity.class.getSimpleName();
     @BindView(R.id.locationTextView) TextView mLocationTextView;
     @BindView(R.id.listView) ListView mListView;
+    @BindView(R.id.findnextButton) Button nextActivity;
+
 
     private String[] library = new String[] {
             "LIBRARY OF CONGRESS", "BODELIAN LIBRARY", "BOSTON PUBLIC LIBRARY",
@@ -42,7 +43,17 @@ public class LibraryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_library);
         ButterKnife.bind(this);
 
-    //      A toast that will display all the library names when clicked
+
+        nextActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LibraryActivity.this, NextActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //      A toast that will display all the library names when clicked
 
     MyLibraryArrayAdapter adapter = new MyLibraryArrayAdapter(this, android.R.layout.simple_list_item_1, library, books);
             mListView.setAdapter(adapter);

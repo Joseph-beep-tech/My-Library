@@ -1,10 +1,5 @@
 package com.moringaschool.mylibrary;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -40,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     intent.putExtra("location", location);
 
                     startActivity(intent);
-//                    Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
                 }
             }
         });

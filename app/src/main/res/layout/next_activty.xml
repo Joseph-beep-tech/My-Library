@@ -6,6 +6,27 @@
     tools:context="com.moringaschool.mylibrary.NextActivity">
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20pt"
+        android:text="Explore the world of endless opportunities"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        />
 
+    <Button
+        android:id="@+id/open"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="67dp"
+        android:text="hello"
+        android:background="@color/colorTextIcons"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
 </RelativeLayout>
