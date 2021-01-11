@@ -1,5 +1,5 @@
 # My Library
-#### {This README is for displaying my library App}, {11/01/2021}
+
 #### By **Joseph-beep-tech**    
 ---
 ## Setup instructions
